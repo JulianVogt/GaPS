@@ -31,7 +31,7 @@ window.fbAsyncInit = function() {
                     var uid = response.authResponse.userID;
                     var accessToken = response.authResponse.accessToken;
                     console.log("Successful login");
-                    window.location.replace("/html/PartySearch.html");
+                    window.location.replace("GaPS/html/PartySearch.html");
                 } else if (response.status === 'not_authorized') {
                     // The user hasn't authorized your application.  They
                     // must click the Login button, or you must call FB.login
