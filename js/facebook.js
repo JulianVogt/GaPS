@@ -44,5 +44,8 @@ window.fbAsyncInit = function() {
                     // to log in to Facebook before authorizing your application.
                     console.log("Not logged in");
                 }
-            },{scope:'email'});
+            });
+            FB.login(function(response) {
+                console.log(response);
+            }, {scope: 'email'});
         }
