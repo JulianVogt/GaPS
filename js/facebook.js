@@ -62,13 +62,13 @@ function stillLoggedIn(){
             // must click the Login button, or you must call FB.login
             // in response to a user gesture, to launch a login dialog.
             console.log("Unauthorized. Logout proceeding");
-            window.location.replace("julianvogt.github.io/index.html")
+            window.location.replace("julianvogt.github.io/GaPS/index.html")
         } else {
             // The user isn't logged in to Facebook. You can launch a
             // login dialog with a user gesture, but the user may have
             // to log in to Facebook before authorizing your application.
             console.log("Not logged in. Redirecting to login page.");
-            window.location.replace("julianvogt.github.io/index.html")
+            window.location.replace("julianvogt.github.io/GaPS/index.html")
         }
     });
 }
