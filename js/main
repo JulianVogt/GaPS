@@ -1,4 +1,4 @@
-//facebook sdk init
+/*//facebook sdk init
 window.fbAsyncInit = function() {
     FB.init({
         appId      : '3099508266843937',
@@ -28,4 +28,4 @@ function checkLoginState(){
     if (state.status == 'connected') {
         window.location.href = "http://www.w3schools.com";
     }
-}
+}*/
