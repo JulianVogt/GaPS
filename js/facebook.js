@@ -31,7 +31,7 @@ window.fbAsyncInit = function() {
                     var uid = response.authResponse.userID;
                     var accessToken = response.authResponse.accessToken;
                     console.log("Successful login");
-                    window.alert("Loggin you in!");
+                    window.alert("Logging you in!");
                     window.location.replace("/html/PartySearch.html");
                 } else if (response.status === 'not_authorized') {
                     // The user hasn't authorized your application.  They
