@@ -379,7 +379,7 @@ section.banner {
 }
 
 .submit-form .third-item {
-  border-right: 1px solid #ddd;
+  #border-right: 1px solid #ddd;
 }
 
 .submit-form select {

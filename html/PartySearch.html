@@ -9,12 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/hero-slider.css">
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <link rel="stylesheet" href="css/datepicker.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/fontAwesome.css">
+        <link rel="stylesheet" href="../css/hero-slider.css">
+        <link rel="stylesheet" href="../css/owl-carousel.css">
+        <link rel="stylesheet" href="../css/datepicker.css">
+        <link rel="stylesheet" href="../css/templatemo-style.css">
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -38,36 +38,11 @@
                         </div></a>
                         <nav id="primary-nav" class="dropdown cf">
                             <ul class="dropdown menu">
-                                <li class='active'><a href="#">Popular</a></li>
-                                <li><a href="#">Most Visited</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="#">Most Visited 1</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Sub Visited Menu 1</a></li>
-                                                <li><a href="#">Sub Visited Two</a></li>
-                                                <li><a href="#">Sub Visited Menu 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Most Visited 2</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Sub Visited Menu 4</a></li>
-                                                <li><a href="#">Sub Visited Five</a></li>
-                                                <li><a href="#">Sub Visited Menu 6</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Most Visited 3</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Sub Visited Menu 7</a></li>
-                                                <li><a href="#">Sub Visited #8</a></li>
-                                                <li><a href="#">Sub Visited Menu 9</a></li>
-                                                <li><a href="#">Sub Visited #10</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a class="scrollTo" data-scrollTo="blog" href="#">Blog Entries</a></li>
-                                <li><a class="scrollTo" data-scrollTo="services" href="#">Our Services</a></li>
-                                <li><a class="scrollTo" data-scrollTo="contact" href="#">Contact Us</a></li>
+                                <li class="active"><a href="PartySearch.html">Party Search</a></li>
+                                <li><a href="BecomeAHost.html">Become A Host</a></li>
+                                <li><a href="HostAParty.html">Host A Party</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Support Us</a></li>
                             </ul>
                         </nav><!-- / #primary-nav -->
                     </div>
@@ -84,42 +59,54 @@
                 <div class="col-md-10 col-md-offset-1">
                     <div class="banner-caption">
                         <div class="line-dec"></div>
-                        <h2>Best Finder For You</h2>
-                        <span>Suspendisse eu lorem massa. Integer sit amet posuere tellus.</span>
-                        <div class="blue-button">
-                            <a class="scrollTo" data-scrollTo="popular" href="#">Discover More</a>
-                        </div>
+                        <h2>Find Parties Around Your Area</h2>
+                        <span>Be it travelling, bored at home or looking to find new friends. We got you covered!</span>
                     </div>
-                    <div class="submit-form">
-                        <form id="form-submit" action="" method="get">
+                    <div class="submit-form" style="border-top: #0f0f0f 1px solid; border-left: #0f0f0f 1px solid; border-right: #0f0f0f 1px solid;">
+                        <form id="form-submit" action="" method="get" style="border: whitesmoke 2px solid;">
                             <div class="row">
                                 <div class="col-md-3 first-item">
                                     <fieldset>
-                                        <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                                        <input name="date" type="date" class="form-control" id="date" placeholder="Date...">
                                     </fieldset>
+                                </div>
+                                <div class="col-md-3 first-item">
+                                    <fieldset>
+                                        <input name="location" type="text" class="form-control" id="location" placeholder="Location..." required="">
+                                    </fieldset>
+
                                 </div>
                                 <div class="col-md-3 second-item">
                                     <fieldset>
-                                        <input name="location" type="text" class="form-control" id="location" placeholder="Type location..." required="">
+                                        <select required name='category' onchange='this.form.()'>
+                                            <option value="">Radius...</option>
+                                            <option value="oneKilometer" style="color: black;">1 km</option>
+                                            <option value="fiveKilometer" style="color: black;">5 km</option>
+                                            <option value="tenKilometer">10 km</option>
+                                            <option value="twentyKilometer">20 km</option>
+                                            <option value="fiftyKilometer">50 km</option>
+                                        </select>
                                     </fieldset>
                                 </div>
                                 <div class="col-md-3 third-item">
                                     <fieldset>
                                         <select required name='category' onchange='this.form.()'>
-                                            <option value="">Select category...</option>
-                                            <option value="Shops">Shops</option>
-                                            <option value="Hotels">Hotels</option>
-                                            <option value="Restaurants">Restaurants</option>
-                                            <option value="Events">Events</option>
-                                            <option value="Meetings">Meetings</option>
-                                            <option value="Fitness">Fitness</option>
-                                            <option value="Cafes">Cafes</option>
+                                            <option value="">Select Party Type...</option>
+                                            <option value="Shops">Movie Night</option>
+                                            <option value="Hotels">Sports</option>
+                                            <option value="Restaurants">Study</option>
+                                            <option value="Events">House Party</option>
+                                            <option value="Meetings">Casual Gathering</option>
+                                            <option value="Fitness">Large Party</option>
+                                            <option value="Fitness">Festival</option>
+                                            <option value="Fitness">Concert</option>
+                                            <option value="Fitness">Other...</option>
                                         </select>
                                     </fieldset>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-3" style="margin-left: 350px; padding-top: 20px;">
                                     <fieldset>
-                                        <button type="submit" id="form-submit" class="btn">Search Now</button>
+                                        <button type="submit" id="form-submit" class="btn">Find Your Party</button>
                                     </fieldset>
                                 </div>
                             </div>
