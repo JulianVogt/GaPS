@@ -41,13 +41,6 @@ js.src = "https://connect.facebook.net/en_US/sdk.js";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-//login check on button click
-function checkLoginState(){
-FB.getLoginStatus(function(response) {
-    if (response.status == 'connected') {
-        window.location.href = "http://www.w3schools.com";
-    }
-}
 }
 </script>
     <div class="container">
@@ -102,6 +95,15 @@ FB.getLoginStatus(function(response) {
         $(document).ready(function () {
             $('select').formSelect();
         });
+
+        //login check on button click
+        function checkLoginState(){
+            FB.getLoginStatus(function(response) {
+                if (response.status == 'connected') {
+                    window.location.href = "http://www.w3schools.com";
+                }
+            }
+        }
     </script>
 </body>
 
