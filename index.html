@@ -98,10 +98,8 @@ fjs.parentNode.insertBefore(js, fjs);
 
         //login check on button click
         function checkLoginState(){
-            FB.getLoginStatus(function(response)) {
-                if (response.status == 'connected') {
-                    window.location.href = "http://www.w3schools.com";
-                }
+            if (FB.getLoginStatus.status == 'connected') {
+                window.location.href = "http://www.w3schools.com";
             }
         }
     </script>
