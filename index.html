@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/tooplate.css">
-    <script src="js/main"></script>
+    <script src="js/facebook.js"></script>
 
 </head>
 
@@ -22,29 +22,18 @@
     <div class="container">
         <div class="row tm-register-row tm-mb-35">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-l">
-                <form action="" method="post" class="tm-bg-black p-5 h-100">
-                    <div class="input-field">
-                        <input placeholder="Username" id="username" name="username" type="text" class="validate">
-                    </div>
-                    <div class="input-field mb-5">
-                        <input placeholder="Password" id="password" name="password" type="password" class="validate">
-                    </div>
-                    <div class="tm-flex-lr">
-                        <a href="#" class="white-text small">Forgot Password?</a>
-                        <!--<button type="submit" class="waves-effect btn-large btn-large-white px-4 black-text rounded-0">Login</button>-->
-
+                    <div>
                         <fb:login-button
                                 scope="public_profile,email"
                                 onlogin="checkLoginState();">
                         </fb:login-button>
                     </div>
-                </form>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-r">
                 <header class="font-weight-light tm-bg-black p-5 h-100">
-                    <h3 class="mt-0 text-white font-weight-light">Your Login</h3>
-                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <p class="mb-0">Vestibulum neque neque, porttitor quis lacinia eu, iaculis id dui. Mauris quis velit lectus.</p>
+                    <h3 class="mt-0 text-white font-weight-light">Login</h3>
+                    <p>As a security precaution we require Facebook sign in to keep track of our users.</p>
+                    <p class="mb-0">We will not post anything under your account but are able to improve our services by tailoring to your location and preferences.</p>
                 </header>
             </div>
         </div>
