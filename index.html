@@ -39,7 +39,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-
+<script>
+    FB.getLoginStatus(function(response) {
+        statusChangeCallback(response);
+    });
+</script>
     <div class="container">
         <div class="row tm-register-row tm-mb-35">
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-l">
@@ -52,7 +56,12 @@
                     </div>
                     <div class="tm-flex-lr">
                         <a href="#" class="white-text small">Forgot Password?</a>
-                        <button type="submit" class="waves-effect btn-large btn-large-white px-4 black-text rounded-0">Login</button>
+                        <!--<button type="submit" class="waves-effect btn-large btn-large-white px-4 black-text rounded-0">Login</button>-->
+
+                        <fb:login-button
+                                scope="public_profile,email"
+                                onlogin="checkLoginState();">
+                        </fb:login-button>
                     </div>
                 </form>
             </div>
