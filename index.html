@@ -98,11 +98,18 @@ fjs.parentNode.insertBefore(js, fjs);
 
         //login check on button click
         function checkLoginState(){
+            console.log("I reached this point");
             if (FB.getLoginStatus.status == 'connected') {
+                console.log("Successful login");
+
                 window.location.href = "http://www.w3schools.com";
             } else {
+                console.log("Failed login");
+
                 window.location.href = "https://www.wordhippo.com/what-is/another-word-for/gps.html";
             }
+            console.log("Nothing happened");
+
         }
     </script>
 </body>
