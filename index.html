@@ -5,66 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Input HTML Form Pack by Tooplate</title>
-    <!--
-
+    <title>Login Form by Tooplate</title>
+	<!--
     Template 2105 Input
-
 	http://www.tooplate.com/view/2105-input
-
-    -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+	-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/tooplate.css">
 </head>
 
-<body id="home">
-    <div class="container tm-home-mt tm-home-container">
-        <div class="row">
-            <div class="col-12">
-                <div class="tm-home-left">
-                    <h1 class="tm-site-title">INPUT</h1>
-                </div>
+<body id="login">
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '3099508266843937',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v8.0'
+        });
+
+        FB.AppEvents.logPageView();
+
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <div class="container">
+        <div class="row tm-register-row tm-mb-35">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-l">
+                <form action="" method="post" class="tm-bg-black p-5 h-100">
+                    <div class="input-field">
+                        <input placeholder="Username" id="username" name="username" type="text" class="validate">
+                    </div>
+                    <div class="input-field mb-5">
+                        <input placeholder="Password" id="password" name="password" type="password" class="validate">
+                    </div>
+                    <div class="tm-flex-lr">
+                        <a href="#" class="white-text small">Forgot Password?</a>
+                        <button type="submit" class="waves-effect btn-large btn-large-white px-4 black-text rounded-0">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-r">
+                <header class="font-weight-light tm-bg-black p-5 h-100">
+                    <h3 class="mt-0 text-white font-weight-light">Your Login</h3>
+                    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                    <p class="mb-0">Vestibulum neque neque, porttitor quis lacinia eu, iaculis id dui. Mauris quis velit lectus.</p>
+                </header>
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <div class="tm-home-left mt-3 font-weight-light">
-                    <p class="tm-mb-35">This is a free <a href="http://www.tooplate.com/view/2105-input">HTML Form Package</a> provided by Tooplate. Five different input forms included.</p>
-                    <p class="tm-mb-35">Feel free to modify and use any form design. Please share it to your friends.</p>
-                    <p>Thank you!</p>
-                </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                <ul class="list-group tm-home-list tm-bg-black font-weight-light">
-                    <li class="d-flex justify-content-between align-items-center">
-                        <a href="register.html" class="tm-white-text">01. Register</a>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center">
-                        <a href="signup.html" class="tm-white-text">02. Sign Up</a>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center">
-                        <a href="login.html" class="tm-white-text">03. Login</a>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center">
-                        <a href="survey.html" class="tm-white-text">04. Survey</a>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center">
-                        <a href="application.html" class="tm-white-text">05. Application</a>
-                    </li>
-                </ul>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ml-auto mr-0 text-center">
+                <a href="register.html" class="waves-effect btn-large btn-large-white px-4 black-text rounded-0">Create New Account</a>
             </div>
         </div>
+        <footer class="row tm-mt-big mb-3">
+            <div class="col-xl-12 text-center">
+                <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5">
+                    Copyright &copy; 2018 Company Name 
+                    
+                    - <a rel="nofollow" href="http://www.tooplate.com/view/2105-input">Input</a> by 
+                    <a rel="nofollow" href="http://tooplate.com" class="tm-footer-link">Tooplate</a>
+                </p>
+            </div>
+        </footer>
     </div>
-    <footer class="row tm-mt-big mb-3">
-        <div class="col-xl-12 text-center font-weight-light">
-            <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5">
-                Copyright &copy; 2018 Company Name - Design:
-                <a rel="nofollow" href="http://tooplate.com" class="tm-footer-link">Tooplate</a>
-            </p>
-        </div>
-    </footer>
+
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+    </script>
 </body>
 
 </html>
