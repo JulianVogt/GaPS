@@ -6,6 +6,10 @@ http://www.templatemo.com/tm-522-venue
 
 */
 
+.searchBar {
+  width: 187.5px;
+}
+
 body {
   font-family: 'Raleway', 'sans-serif';
   background-color: #fff;
