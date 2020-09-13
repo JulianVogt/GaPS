@@ -140,6 +140,7 @@ ul.tm-home-list:not(.browser-default) {
 }
 
 #login {
+  background-color: #0f0f0f;
   background-image: url(../img/loginWallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
