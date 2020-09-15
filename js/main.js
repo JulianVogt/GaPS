@@ -333,3 +333,155 @@ jQuery(document).ready(function($) {
           
         })
 });
+
+function showSearches() {
+    document.getElementById("results").innerHTML =
+        "<section class=\"featured-places\" id=\"results\" style=\"background-color: black; margin-top: 0px;\">\n" +
+        "        <div class=\"container\">\n" +
+        "            <div class=\"row container\" style=\"margin-bottom: 20px;\">\n" +
+        "                <div class=\"col-md-12 col-sm-12 col-xs-12\">\n" +
+        "                    <div class=\"featured-item\">\n" +
+        "                        <div class=\"thumb\">\n" +
+        "                            <div class=\"date-content\">\n" +
+        "                                <h6>Day</h6>\n" +
+        "                                <span>Month</span>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                        <div class=\"down-content\" style=\"background-color: whitesmoke; border-radius: 5px;\">\n" +
+        "                            <h4>Host Name - Suburb</h4>\n" +
+        "                            <span>This will have the category</span>\n" +
+        "                            <p>This will contain the Hosts description of the party</p>\n" +
+        "                            <div class=\"row\">\n" +
+        "                                <div class=\"col-md-6 first-button\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">Add to \"My List\"</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-md-6\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">View Details</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>\n" +
+        "            </div>\n" +
+        "            <div class=\"row container\" style=\"margin-bottom: 20px;\">\n" +
+        "                <div class=\"col-md-12 col-sm-12 col-xs-12\">\n" +
+        "                    <div class=\"featured-item\">\n" +
+        "                        <div class=\"thumb\">\n" +
+        "                            <div class=\"date-content\">\n" +
+        "                                <h6>Day</h6>\n" +
+        "                                <span>Month</span>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                        <div class=\"down-content\" style=\"background-color: whitesmoke; border-radius: 5px;\">\n" +
+        "                            <h4>Host Name - Suburb</h4>\n" +
+        "                            <span>This will have the category</span>\n" +
+        "                            <p>This will contain the Hosts description of the party</p>\n" +
+        "                            <div class=\"row\">\n" +
+        "                                <div class=\"col-md-6 first-button\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">Add to \"My List\"</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-md-6\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">View Details</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>\n" +
+        "            </div>\n" +
+        "            <div class=\"row container\">\n" +
+        "                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n" +
+        "                    <div class=\"featured-item\">\n" +
+        "                        <div class=\"thumb\">\n" +
+        "                            <img src=\"img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
+        "                            <div class=\"date-content\">\n" +
+        "                                <h6>Day</h6>\n" +
+        "                                <span>Month</span>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                        <div class=\"down-content\" style=\"background-color: whitesmoke; border-radius: 5px;\">\n" +
+        "                            <h4>Host Name - Suburb</h4>\n" +
+        "                            <span>This will have the category</span>\n" +
+        "                            <p>This will contain the Hosts description of the party</p>\n" +
+        "                            <div class=\"row\">\n" +
+        "                                <div class=\"col-md-6 first-button\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">Add to \"My List\"</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-md-6\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">View Details</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>\n" +
+        "                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n" +
+        "                    <div class=\"featured-item\">\n" +
+        "                        <div class=\"thumb\">\n" +
+        "                            <img src=\"img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
+        "                            <div class=\"date-content\">\n" +
+        "                                <h6>Day</h6>\n" +
+        "                                <span>Month</span>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                        <div class=\"down-content\" style=\"background-color: whitesmoke; border-radius: 5px;\">\n" +
+        "                            <h4>Host Name - Suburb</h4>\n" +
+        "                            <span>This will have the category</span>\n" +
+        "                            <p>This will contain the Hosts description of the party</p>\n" +
+        "                            <div class=\"row\">\n" +
+        "                                <div class=\"col-md-6 first-button\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">Add to \"My List\"</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-md-6\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">View Details</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>\n" +
+        "                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n" +
+        "                    <div class=\"featured-item\">\n" +
+        "                        <div class=\"thumb\">\n" +
+        "                            <img src=\"img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
+        "                            <div class=\"date-content\">\n" +
+        "                                <h6>Day</h6>\n" +
+        "                                <span>Month</span>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                        <div class=\"down-content\" style=\"background-color: whitesmoke; border-radius: 5px;\">\n" +
+        "                            <h4>Host Name - Suburb</h4>\n" +
+        "                            <span>This will have the category</span>\n" +
+        "                            <p>This will contain the Hosts description of the party</p>\n" +
+        "                            <div class=\"row\">\n" +
+        "                                <div class=\"col-md-6 first-button\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">Add to \"My List\"</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                                <div class=\"col-md-6\">\n" +
+        "                                    <div class=\"text-button\">\n" +
+        "                                        <a href=\"#\">View Details</a>\n" +
+        "                                    </div>\n" +
+        "                                </div>\n" +
+        "                            </div>\n" +
+        "                        </div>\n" +
+        "                    </div>\n" +
+        "                </div>\n" +
+        "            </div>\n" +
+        "        </div>\n" +
+        "    </section>";
+}

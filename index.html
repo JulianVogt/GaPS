@@ -1,66 +1,622 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>GaPS - Home</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login GaPS</title>
-	<!--
-    Template 2105 Input
-	http://www.tooplate.com/view/2105-input
-	-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/tooplate.css">
-    <script src="js/facebook.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
 
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-<body id="login">
-    <div class="container">
-        <div style="text-align: center; margin-top: -260px; padding-bottom: 100px;">
-            <div class="row">
-                <div class="col-6">
-                    <p style="font-size: 100px;">
-                        <a href="../index.html">
-                                <img src="img/GaPSicon.png" alt="Venue Logo" style="height: 200px; width: 200px;">
-                        </a>GaPS</br><div style="margin-left: 230px; margin-top: -70px; font-size: 20px;">Gatherings and PartieS</div></p>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+<!--
+	Venue Template
+	http://www.templatemo.com/tm-522-venue
+-->
+    </head>
+
+<body style="background-color: black;">
+ 
+    <div class="wrap">
+        <header id="header" style="background: black">
+            <div class="container" style="background: black">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button id="primary-nav-button" type="button">Menu</button>
+                        <a href="index.html"><div class="logo">
+                            <img src="img/GaPSicon.png" alt="Venue Logo" style="height: 100px; width: 100px;">
+                        </div></a>
+                        <nav id="primary-nav" class="dropdown cf">
+                            <ul class="dropdown menu">
+                                <li class="active"><a href="#" style="color: white;">Party Search</a></li>
+                                <li><a href="html/HostAParty.html" style="color: white;">My Parties</a></li>
+                                <li><a href="#" style="color: white;">Contact Us</a></li>
+                                <li><a href="#" style="color: white;">Support Us</a></li>
+                                <li><a href="html/Login.html" style="color: white;">Login/Signup</a></li>
+                            </ul>
+                        </nav><!-- / #primary-nav -->
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section class="popular-places" id="popular" style="background-color: black;">
+        <div class="container-fluid">
+            <div class="owl-carousel owl-theme">
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_5.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_1.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_2.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_3.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_4.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_5.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_4.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_3.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_2.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item popular-item">
+                    <div class="thumb">
+                        <img src="img/popular_item_1.jpg" alt="">
+                        <div class="text-content">
+                            <h4>Name</h4>
+                            <span>Category</span>
+                        </div>
+                        <div class="plus-button">
+                            <a href="#"><i class="fa">?</i></a>
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row tm-register-row tm-mb-35">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-l" style="text-align: center">
-                    <div style="padding: 125px 50px 200px;">
-                        <div onlogin="checkLoginState();" class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="rounded" data-auto-logout-link="false" data-use-continue-as="true" data-width=""></div>
+    </section>
+    
+    <section class="banner" id="top" style="background-color: black; margin-top: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="banner-caption">
+                        <div class="line-dec"></div>
+                        <h2>Find Parties Around Your Area</h2>
+                        <span>Be it travelling, bored at home or looking to find new friends. We got you covered!</span>
                     </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 tm-login-r">
-                <header class="font-weight-light tm-bg-black p-5 h-100">
-                    <h3 class="mt-0 text-white font-weight-light" style="padding:  10px 15px 0px;">Login</h3>
-                    <p style="padding: 0px 15px 15px;">As a security precaution we require Facebook sign in to keep track of our users.</p>
-                    <p class="mb-0" style="height: 75px; padding: 0px 15px 15px;">We will not post anything under your account but are able to improve our services by tailoring to your location and preferences.</p>
-                </header>
+                    <div class="submit-form" style="border-top: #0f0f0f 1px solid; border-left: #0f0f0f 1px solid; border-right: #0f0f0f 1px solid; background-color: black">
+                        <form id="form-submit" action="" method="get" style="border: black 1px solid;">
+                            <div class="row">
+                                <div class="col-md-3 col-xs-12 first-item searchBar">
+                                    <fieldset>
+                                        <input name="date" type="date" class="form-control" id="date" placeholder="Date..." style="font-size: inherit;">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3 col-xs-12 first-item searchBar">
+                                    <fieldset>
+                                        <input name="location" type="text" class="form-control" id="location" placeholder="Location..." style="font-size: inherit;">
+                                    </fieldset>
+
+                                </div>
+                                <div class="col-md-3 col-xs-12 second-item searchBar">
+                                    <fieldset>
+                                        <select required name='category' onchange='this.form.()' style="font-size: inherit;">
+                                            <option value="">Radius...</option>
+                                            <option value="oneKilometer">1 km</option>
+                                            <option value="fiveKilometer">5 km</option>
+                                            <option value="tenKilometer">10 km</option>
+                                            <option value="twentyKilometer">20 km</option>
+                                            <option value="fiftyKilometer">50 km</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3 col-xs-12 third-item searchBar">
+                                    <fieldset>
+                                        <select required name='category' onchange='this.form.()' style="font-size: inherit;">
+                                            <option value="">Select Party Type...</option>
+                                            <option value="Shops">Movie Night</option>
+                                            <option value="Hotels">Sports</option>
+                                            <option value="Restaurants">Study</option>
+                                            <option value="Events">House Party</option>
+                                            <option value="Meetings">Casual Gathering</option>
+                                            <option value="Fitness">Large Party</option>
+                                            <option value="Fitness">Festival</option>
+                                            <option value="Fitness">Concert</option>
+                                            <option value="Fitness">Other...</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-3 col-xs-12 third-item searchBar">
+                                    <fieldset>
+                                        <button onclick="showSearches()" type="submit" id="form-submit" class="btn" style="font-size: inherit;">Find Your Party</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <footer class="row tm-mt-big mb-3">
-            <div class="col-xl-12 text-center">
-                <p class="d-inline-block tm-bg-black white-text py-2 tm-px-5">
-                    Copyright &copy; 2020 AzizGroup
-                </p>
+    <div id="results"></div>
+    <!--<section class="featured-places" id="" style="background-color: black; margin-top: 0px;">
+        <div class="container">
+            <div class="row container" style="margin-bottom: 20px;">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <div class="date-content">
+                                <h6>Day</h6>
+                                <span>Month</span>
+                            </div>
+                        </div>
+                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
+                            <h4>Host Name - Suburb</h4>
+                            <span>This will have the category</span>
+                            <p>This will contain the Hosts description of the party</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+            <div class="row container" style="margin-bottom: 20px;">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <div class="date-content">
+                                <h6>Day</h6>
+                                <span>Month</span>
+                            </div>
+                        </div>
+                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
+                            <h4>Host Name - Suburb</h4>
+                            <span>This will have the category</span>
+                            <p>This will contain the Hosts description of the party</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row container">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="img/featured_item_1.jpg" alt="" height="200px">
+                            <div class="date-content">
+                                <h6>Day</h6>
+                                <span>Month</span>
+                            </div>
+                        </div>
+                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
+                            <h4>Host Name - Suburb</h4>
+                            <span>This will have the category</span>
+                            <p>This will contain the Hosts description of the party</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="img/featured_item_1.jpg" alt="" height="200px">
+                            <div class="date-content">
+                                <h6>Day</h6>
+                                <span>Month</span>
+                            </div>
+                        </div>
+                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
+                            <h4>Host Name - Suburb</h4>
+                            <span>This will have the category</span>
+                            <p>This will contain the Hosts description of the party</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="img/featured_item_1.jpg" alt="" height="200px">
+                            <div class="date-content">
+                                <h6>Day</h6>
+                                <span>Month</span>
+                            </div>
+                        </div>
+                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
+                            <h4>Host Name - Suburb</h4>
+                            <span>This will have the category</span>
+                            <p>This will contain the Hosts description of the party</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section class="map" id="contact" style="background-color: black;">
+        <div id="map">
+            <!-- How to change your own map point
+                   1. Go to Google Maps
+                   2. Click on your location point
+                   3. Click "Share" and choose "Embed map" tab
+                   4. Copy only URL and paste it within the src="" field below
+            -->
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13222.160090950107!2d150.83476101488034!3d-34.0556684797189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1599917039838!5m2!1sen!2sau" width="100%" height="700px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+
+    <section class="featured-places" id="blog" style="background-color: black; margin-top: 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <span style="color: white; font-size: 36px;">Featured</span>
+                    </div>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="img/featured_item_1.jpg" alt="">
+                            <div class="overlay-content">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="date-content">
+                                <h6>28</h6>
+                                <span>August</span>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Festival Example</h4>
+                            <span>Festival</span>
+                            <p>Music festival description...</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details/Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="img/featured_item_2.jpg" alt="">
+                            <div class="overlay-content">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="date-content">
+                                <h6>20</h6>
+                                <span>September</span>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Concert Example</h4>
+                            <span>Concert</span>
+                            <p>Concert description...</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details/Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="featured-item">
+                        <div class="thumb">
+                            <img src="img/featured_item_3.jpg" alt="">
+                            <div class="overlay-content">
+                                <ul>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                            </div>
+                            <div class="date-content">
+                                <h6>12</h6>
+                                <span>October</span>
+                            </div>
+                        </div>
+                        <div class="down-content">
+                            <h4>Another example</h4>
+                            <span>Category</span>
+                            <p>description</p>
+                            <div class="row">
+                                <div class="col-md-6 first-button">
+                                    <div class="text-button">
+                                        <a href="#">Add to "My List"</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-button">
+                                        <a href="#">View Details/Enquire</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer style="background-color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="about-veno">
+                        <div class="logo">
+                            <img src="img/GaPSicon.png" alt="Venue Logo" width="100px" height="100px">
+                        </div>
+                        <p>Some text about this service and where to find us.</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#" style="background-color: #3b5998;"><i class="fa fa-facebook"></i></a>
+                                <a href="#" style="background-color: #1DA1F2;"><i class="fa fa-twitter"></i></a>
+                                <a href="#" style="background-color: #C13584;"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="useful-links">
+                        <div class="footer-heading">
+                            <h4>Useful Links</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-stop"></i>Host A party</a></li>
+                                    <li><a href="#"><i class="fa fa-stop"></i>Find A party</a></li>
+                                    <li><a href="#"><i class="fa fa-stop"></i>Become A host</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-stop"></i>My Profile</a></li>
+                                    <li><a href="#"><i class="fa fa-stop"></i>Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <div class="footer-heading">
+                            <h4>Contact Information</h4>
+                        </div>
+                        <p>Have an enquiry about our services or experiencing troubles. Do not hesitate to contact us.</p>
+                        <ul>
+                            <li><span>Email:</span><a href="#">gaps@company.co</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer" style="background-color: black;">
+        <p style="background-color: black;">Copyright &copy; 2020 AzizGroup</p>
     </div>
 
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('select').formSelect();
-        });
-    </script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
