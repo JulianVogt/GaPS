@@ -335,10 +335,10 @@ jQuery(document).ready(function($) {
 });
 
 function showSearches() {
-	let category = document.getElementByName(category).value;
-	let location = document.getElementByName(location).value;
-	let date = document.getElementByName(date).value;
-	let radius = document.getElementByName(radius).value;
+	let category = document.getElementById("category").value;
+	let location = document.getElementById("location").value;
+	let date = document.getElementById("date").value;
+	let radius = document.getElementById("radius").value;
     document.getElementById("results").innerHTML =
         "<section class=\"featured-places\" id=\"results\" style=\"background-color: black; margin-top: 0px;\">\n" +
         "        <div class=\"container\">\n" +
