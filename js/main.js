@@ -335,6 +335,10 @@ jQuery(document).ready(function($) {
 });
 
 function showSearches() {
+	let category = document.getElementByName(category).value;
+	let location = document.getElementByName(location).value;
+	let date = document.getElementByName(date).value;
+	let radius = document.getElementByName(radius).value;
     document.getElementById("results").innerHTML =
         "<section class=\"featured-places\" id=\"results\" style=\"background-color: black; margin-top: 0px;\">\n" +
         "        <div class=\"container\">\n" +
@@ -343,13 +347,13 @@ function showSearches() {
         "                    <div class=\"featured-item\">\n" +
         "                        <div class=\"thumb\">\n" +
         "                            <div class=\"date-content\">\n" +
-        "                                <h6>Day</h6>\n" +
-        "                                <span>Month</span>\n" +
+        "                                <h6>+date.day+</h6>\n" +
+        "                                <span>+date.month+</span>\n" +
         "                            </div>\n" +
         "                        </div>\n" +
         "                        <div class=\"down-content\" style=\"background-color: whitesmoke; border-radius: 5px;\">\n" +
         "                            <h4>Host Name - Suburb</h4>\n" +
-        "                            <span>This will have the category</span>\n" +
+        "                            <span>+category+</span>\n" +
         "                            <p>This will contain the Hosts description of the party</p>\n" +
         "                            <div class=\"row\">\n" +
         "                                <div class=\"col-md-6 first-button\">\n" +
