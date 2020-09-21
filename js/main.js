@@ -342,7 +342,7 @@ function showSearches() {
         "                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n" +
         "                    <div class=\"featured-item\">\n" +
         "                        <div class=\"thumb\">\n" +
-        "                            <img src=\"img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
+        "                            <img src=\"../img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
         "                            <div class=\"date-content\">\n" +
         "                                <h6>Day</h6>\n" +
         "                                <span>Month</span>\n" +
@@ -370,7 +370,7 @@ function showSearches() {
         "                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n" +
         "                    <div class=\"featured-item\">\n" +
         "                        <div class=\"thumb\">\n" +
-        "                            <img src=\"img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
+        "                            <img src=\"../img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
         "                            <div class=\"date-content\">\n" +
         "                                <h6>Day</h6>\n" +
         "                                <span>Month</span>\n" +
@@ -398,7 +398,7 @@ function showSearches() {
         "                <div class=\"col-md-4 col-sm-6 col-xs-12\">\n" +
         "                    <div class=\"featured-item\">\n" +
         "                        <div class=\"thumb\">\n" +
-        "                            <img src=\"img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
+        "                            <img src=\"../img/featured_item_1.jpg\" alt=\"\" height=\"200px\">\n" +
         "                            <div class=\"date-content\">\n" +
         "                                <h6>Day</h6>\n" +
         "                                <span>Month</span>\n" +
