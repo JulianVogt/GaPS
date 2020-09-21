@@ -8,21 +8,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/fontAwesome.css">
-        <link rel="stylesheet" href="css/hero-slider.css">
-        <link rel="stylesheet" href="css/datepicker.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../css/fontAwesome.css">
+        <link rel="stylesheet" href="../css/hero-slider.css">
+        <link rel="stylesheet" href="../css/datepicker.css">
+        <link rel="stylesheet" href="../css/templatemo-style.css">
 
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <link rel="stylesheet" href="css/owl-carousel.css">
-        <script src="js/owl.carousel.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="css/owl.carousel.css">
+        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="../js/main.js"></script>
         <!--
             Venue Template
             http://www.templatemo.com/tm-522-venue
@@ -37,11 +34,11 @@
                     <div class="col-md-12">
                         <nav id="primary-nav">
                             <ul class="menu">
-                                <li class="active"><a href="html/partySearch.html">Party Search</a></li>
+                                <li class="active"><a href="#">Party Search</a></li>
                                 <li><a href="html/HostAParty.html">My Parties</a></li>
                                 <li><a href="#">Example</a></li>
                                 <li><a href="index.html"><div class="logo">
-                                    <img src="img/GaPSicon.png" alt="GaPS Logo" style="height: 100px; width: 100px;">
+                                    <img src="../img/GaPSicon.png" alt="GaPS Logo" style="height: 100px; width: 100px;">
                                 </div></a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">Support Us</a></li>
@@ -54,65 +51,11 @@
         </header>
     </div>
 
-    <section class="popular-places" id="popular" style="background-color: black;">
-        <div class="container-fluid cd-full-width">
-            <div class="owl-carousel owl-item">
-                <div class="item popular-item">
-                    <div class="thumb">
-                        <img src="img/loginWallpaper.jpg" alt="">
-                        <div class="text-content">
-                            <h4>Name</h4>
-                            <span>Category</span>
-                        </div>
-                        <div class="plus-button">
-                            <a href="#"><i class="fa">Enquire</i></a>
-                            <a href="#"><i class="fa">Information</i></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="item popular-item">
-                    <div class="thumb">
-                        <img src="img/main_banner.jpg" alt="">
-                        <div class="text-content">
-                            <h4>Name</h4>
-                            <span>Category</span>
-                        </div>
-                        <div class="plus-button">
-                            <a href="#"><i class="fa">Enquire</i></a>
-                            <a href="#"><i class="fa">Information</i></a>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="item popular-item">
-                    <div class="thumb">
-                        <img src="img/partyBanner.jpeg" alt="">
-                        <div class="text-content">
-                            <h4>Name</h4>
-                            <span>Category</span>
-                        </div>
-                        <div class="plus-button">
-                            <a href="#"><i class="fa">Enquire</i></a>
-                            <a href="#"><i class="fa">Information</i></a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
     
     <section class="banner" id="top" style="background-color: black; margin-top: 40px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="banner-caption">
-                        <div class="line-dec"></div>
-                        <h2>Find Parties Around Your Area</h2>
-                        <span>Be it travelling, bored at home or looking to find new friends. We got you covered!</span>
-                    </div>
                     <div class="submit-form" style="border-top: #0f0f0f 1px solid; border-left: #0f0f0f 1px solid; border-right: #0f0f0f 1px solid; background-color: black">
                         <form id="form-submit" action="" method="get" style="border: black 1px solid;">
                             <div class="row">
@@ -129,7 +72,7 @@
                                 </div>
                                 <div class="col-md-3 col-xs-12 second-item searchBar">
                                     <fieldset>
-                                        <select required name='category' onchange='this.form.()' style="font-size: inherit;">
+                                        <select name='category' onchange='this.form.()' style="font-size: inherit;">
                                             <option value="">Radius...</option>
                                             <option value="oneKilometer">1 km</option>
                                             <option value="fiveKilometer">5 km</option>
@@ -141,7 +84,7 @@
                                 </div>
                                 <div class="col-md-3 col-xs-12 third-item searchBar">
                                     <fieldset>
-                                        <select required name='category' onchange='this.form.()' style="font-size: inherit;">
+                                        <select name='category' onchange='this.form.()' style="font-size: inherit;">
                                             <option value="">Select Party Type...</option>
                                             <option value="Shops">Movie Night</option>
                                             <option value="Hotels">Sports</option>
@@ -157,7 +100,7 @@
                                 </div>
                                 <div class="col-md-3 col-xs-12 third-item searchBar">
                                     <fieldset>
-                                        <button onclick="showSearches()" type="submit" id="form-submit" class="btn" style="font-size: inherit;">Find Your Party</button>
+                                        <button onclick="showSearches()" type="button" id="form-submit" class="btn" style="font-size: inherit;">Find Your Party</button>
                                     </fieldset>
                                 </div>
                             </div>
@@ -171,64 +114,6 @@
     <div id="results"></div>
     <!--<section class="featured-places" id="" style="background-color: black; margin-top: 0px;">
         <div class="container">
-            <div class="row container" style="margin-bottom: 20px;">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="featured-item">
-                        <div class="thumb">
-                            <div class="date-content">
-                                <h6>Day</h6>
-                                <span>Month</span>
-                            </div>
-                        </div>
-                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
-                            <h4>Host Name - Suburb</h4>
-                            <span>This will have the category</span>
-                            <p>This will contain the Hosts description of the party</p>
-                            <div class="row">
-                                <div class="col-md-6 first-button">
-                                    <div class="text-button">
-                                        <a href="#">Add to "My List"</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="text-button">
-                                        <a href="#">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row container" style="margin-bottom: 20px;">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="featured-item">
-                        <div class="thumb">
-                            <div class="date-content">
-                                <h6>Day</h6>
-                                <span>Month</span>
-                            </div>
-                        </div>
-                        <div class="down-content" style="background-color: whitesmoke; border-radius: 5px;">
-                            <h4>Host Name - Suburb</h4>
-                            <span>This will have the category</span>
-                            <p>This will contain the Hosts description of the party</p>
-                            <div class="row">
-                                <div class="col-md-6 first-button">
-                                    <div class="text-button">
-                                        <a href="#">Add to "My List"</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="text-button">
-                                        <a href="#">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row container">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="featured-item">
@@ -519,26 +404,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="../js/vendor/bootstrap.min.js"></script>
     
-    <script src="js/datepicker.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            items:1,
-            mergeFit: false,
-            stagePadding:0,
-            autoplayHoverPause: false,
-            autoplay:true,
-            autoplayTimeout: 5000,
-            responsive : {
-                0: {
-                    items: 1
-                }
-            }
-        })
-    </script>
+    <script src="../js/datepicker.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+
 </body>
 </html>
